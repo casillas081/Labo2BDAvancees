@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labo_2_BdAvancees", "Labo_2_BdAvancees\Labo_2_BdAvancees.csproj", "{0A8A36B4-2A2B-4EF5-B443-0AA3B0B07872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsUnitaires", "TestsUnitaires\TestsUnitaires.csproj", "{BB077911-E4F8-49ED-9D7F-39538C9ACCC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A8A36B4-2A2B-4EF5-B443-0AA3B0B07872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8A36B4-2A2B-4EF5-B443-0AA3B0B07872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8A36B4-2A2B-4EF5-B443-0AA3B0B07872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8A36B4-2A2B-4EF5-B443-0AA3B0B07872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB077911-E4F8-49ED-9D7F-39538C9ACCC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB077911-E4F8-49ED-9D7F-39538C9ACCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB077911-E4F8-49ED-9D7F-39538C9ACCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB077911-E4F8-49ED-9D7F-39538C9ACCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
