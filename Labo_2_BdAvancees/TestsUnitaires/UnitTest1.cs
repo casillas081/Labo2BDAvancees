@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data.Entity;
 using Labo_2_BdAvancees;
 using System.Linq;
+using System.Data.Entity.Infrastructure;
 
 namespace TestsUnitaires
 {
@@ -31,6 +32,28 @@ namespace TestsUnitaires
         public CompanyContext GetContext()
         {
             return new CompanyContext();
+        }
+        
+        [TestMethod]
+        [ExpectedException(typeof(DbUpdateConcurrencyException))]
+        public void DetecteLesEditionsConcurrences()
+        {
+            using(CompanyContext contexteDeJohn = GetContext())
+            {
+                using(CompanyContext contextDeSarah = GetContext())
+                {
+                    var clientDeJohn = contexteDeJohn.Customers.First();
+                    var clientDeSarah = contextDeSarah.Customers.First();
+
+                    clientDeJohn.AccountBalance += 1000;
+                    contexteDeJohn.SaveChanges();
+
+                    clientDeSarah.AccountBalance += 2000;
+                    contextDeSarah.SaveChanges();
+
+
+                }
+            }
         }
     }
 }
